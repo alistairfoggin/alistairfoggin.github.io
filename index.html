@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Alistair Foggin</title>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/styles.css">
+    <link href="assets/bootstrap/bootstrap.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b7a3822f24.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Styles -->
+    <style>
+         body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            background-color: #181a1b;
+            color: #4F6071;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 2rem;
+            color: #FFFFFF;
+        }
+
+        h3 {
+            font-weight: 300;
+            font-size: 1.5rem;
+            color: #FFFFFF;
+        }
+
+        p {
+            color:#a0b0d8;
+        }
+
+        #header {
+            background-color: #1e2122;
+            /*background-color: #FFFFFF;*/
+            /*background-color: #fcedd9;*/
+            /* display: flex; */
+            /* align-items: flex-end; */
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        #footer {
+            background-color: #181a1b;
+            padding: 60px;
+        }
+
+        #portrait {
+            border: 3px solid white;
+        }
+
+        #paper-authors a {
+            color: white;
+            text-decoration: none; /* Optional: removes the underline from links */
+        }
+
+        #header-text {
+            margin-top: 60px;
+            margin-left: 220px;
+            color: #FFFFFF;
+        }
+
+        #header-text-name {
+            font-size: 40px;
+            color: #FFFFFF;
+        }
+
+        #header-text-email {
+            font-size: 20px;
+            font-style: italic;
+            color: #FFFFFF;
+        }
+
+        #header-text-dept {
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+
+        .header-text-desc {
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+
+        .main-text-desc {
+            font-size: 15px;
+            color: #FFFFFF;
+        }
+
+        .vspace-top {
+            margin-top: 30px;
+        }
+
+        .vspace-top-news {
+            margin-top: 15px;
+        }
+
+        .paper-image {
+            width: 150px;
+        }
+
+        .paper-desc {
+            font-size: 15px;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        .news-date {
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        .paper-title {
+            font-size: 25px;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        .paper-authors {
+            font-style: italic;
+            color: #FFFFFF;
+        }
+
+        .course {
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        .institution {
+            font-style: italic;
+            color: #FFFFFF;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        .text-lightblue {
+            color: #a0b0d8;
+        }
+
+        .white {
+            background-color: #FFFFFF;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 offset-sm-1">
+                <img src="assets/imgs/face.jpg" class="img-fluid" alt="Avatar">
+            </div>
+
+            <div class="col">
+                <div id="header-text-name">
+                    Alistair Foggin
+                </div>
+                <div id="header-text-email">
+                    <script>
+                        var part1 = "alistair.foggin";
+                        var part2 = "@";
+                        var part3 = "york.ac.uk";
+                        document.write('<a href="mailto:' + part1 + part2 + part3 + '">' + part1 + part2 + part3 + '</a>');
+                    </script>
+                    <!-- |
+                    <script>
+                        var part1 = "alistair.foggin02";
+                        var part2 = "@";
+                        var part3 = "gmail.com";
+                        document.write('<a href="mailto:' + part1 + part2 + part3 + '">' + part1 + part2 + part3 + '</a>');
+                    </script> -->
+                </div>
+                <div id="header-text-dept">
+                    <a href="https://www.york.ac.uk/computer-science/research/groups/vision-graphics-and-learning/" target="_blank" rel="noopener">
+                        <span>VGL group</span>
+                    </a>
+                </div>
+                <div id="header-text-dept">
+                    <a href="https://www.york.ac.uk/computer-science/" target="_blank" rel="noopener">
+                        <span>Dept. Computer Science</span>
+                    </a>
+                </div>
+                <div id="header-text-dept">
+                    <a href="http://www.york.ac.uk/" target="_blank" rel="noopener">
+                        <span>University of York</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/alistairfoggin">[GitHub]</a>
+                    <a href="https://uk.linkedin.com/in/alistair-foggin">[LinkedIn]</a>
+                    <a href="https://bsky.app/profile/alistairfoggin.bsky.social">[Bluesky]</a>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<section>
+    <div class="container">
+        <div class="row vspace-top">
+            <div class="col offset-sm-1">
+                <h1>Bio</h1>
+                <p class="main-text-desc">
+                    I am a PhD researcher in Computer Vision, Graphics and Learning having graduated in
+                    Computer Science with First Class Honours from the University of York. I am supervised by
+                    <a href="https://www-users.cs.york.ac.uk/wsmith/">Prof. William Smith</a> and my research is
+                    investigating methodologies to learn time-dependent 3D representations of real-world environments
+                    from photographs with a focus on glaciers. In particular in how to extract key properties such as
+                    velocity, volume change, and ice calving frequency.
+                </p>
+                <p class="main-text-desc">
+                    Over the last few years, I have carried out a reasearch project as part of the YorRobots Venables Internship,
+                    and have been working at Daysix part time on a fantastic variety of Web Apps as well as The Trauma App for
+                    NHS Scotland. Having grown up in China and Kyrgyzstan, going and helping on work trips with Plateau Perspectives,
+                    and working at Glencoe Outdoor Centre as a Group Instructor, I have also enjoyed a wide experience of the world,
+                    cultures, and the outdoors.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row vspace-top">
+            <div class="col offset-sm-1">
+                <h1>Work</h1>
+                <br>
+                <ol class="timeline">
+                    <li class="is-revealing is-header">
+                        <!-- <span class="point"></span> -->
+                        <img src="assets/imgs/logos/york_uni.png" class="logo" style="transform: scale(0.81);"/>
+                        <p class="description">
+                            University of York<br>
+                            <span class="text-lightblue">PhD Student in Computer Science</span><br>
+                            2024 -
+                        </p>
+                    </li>
+                    <li class="is-revealing is-header">
+                        <!-- <span class="point"></span> -->
+                        <img src="assets/imgs/logos/university_of_york_department_of_computer_science_logo.jpg" class="logo" style="transform: scale(0.81);"/>
+                        <p class="description">
+                            YorRobots<br>
+                            <span class="text-lightblue">Research Intern</span><br>
+                            2023
+                        </p>
+                    </li>
+                    <li class="is-revealing is-header">
+                        <!-- <span class="point"></span> -->
+                        <img src="assets/imgs/logos/daysix_ltd_logo.jpg" class="logo" style="transform: scale(0.81);"/>
+                        <p class="description">
+                            Daysix<br>
+                            <span class="text-lightblue">Web and App Developer</span><br>
+                            2020 - 2024
+                        </p>
+                    </li>
+                    <li class="is-revealing is-header">
+                        <!-- <span class="point"></span> -->
+                        <img src="assets/imgs/logos/glencoe.png" class="logo" style="transform: scale(0.81);"/>
+                        <p class="description">
+                            Glencoe Outdoor Centre<br>
+                            <span class="text-lightblue">Group Instructor</span><br>
+                            2021
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--- List of publications --->
+<section>
+    <div class="container">
+<!--        <div class="row vspace-top">-->
+        <div class="col offset-sm-1">
+            <h1>Academic Achievements</h1>
+            <br>
+        </div>
+<!--        </div>-->
+        <div class="row align-items-center">
+            <!-- Video Section -->
+            <div class="col offset-sm-1">
+                <a href="assets/other/VR Interface Poster.pdf" target="_blank">
+                    <img src="assets/imgs/vr_interface_screenshot.png" alt="Sample Image" style="width: 100%; border-radius: 0;">
+                </a>
+            </div>
+
+            <!-- Text Section -->
+            <div class="col">
+                <div>
+                    <div class="paper-title">
+                        Virtual Reality Interface for Robot Teleoperation
+                        and Environment Visualisation
+                    </div>
+                    <p>YorRobots Venables Internship | Award for Best Work</p>
+                </div>
+                <div id="paper-authors">
+                    <b><a href="https://alistairfoggin.github.io/">Alistair Foggin</a></b>,
+                    <a href="https://www.linkedin.com/in/alan-millard-45b9b519/">Alan Millard</a>
+                </div>
+                <div>
+                    <a href="assets/other/VR Interface Poster.pdf" target="_blank">[Project Poster]</a>
+                    <a href="https://github.com/alistairfoggin/YorRobotsVR">[Code]</a>
+                </div>
+                <!--                <div class="paper-desc">-->
+                <!--                    &lt;!&ndash;                    arXiv 2024&ndash;&gt;-->
+                <!--                    2024-->
+                <!--                </div>-->
+            </div>
+        </div>
+        <br>
+        <div class="row align-items-center">
+            <!-- Video Section -->
+            <!--            <div class="col offset-sm-1">-->
+            <!--                <video playsinline autoplay loop preload muted id="header_vid" style="width: 100%;">-->
+            <!--                    <source src="tabe/videos/results_vids/TABE-51.mp4" type="video/mp4">-->
+            <!--                </video>-->
+            <!--            </div>-->
+            <div class="col offset-sm-1 white">
+                <img src="assets/imgs/dissertation_state_machine.svg" alt="Sample Image" style="width: 100%; border-radius: 0;">
+            </div>
+
+            <!-- Text Section -->
+            <div class="col">
+                <div>
+                    <div class="paper-title">
+                        Autonomous Landing of a UAV on a UGV for Extending Mission Flight Time
+                    </div>
+                    <p>Final Year Undergraduate Dissertation</p>
+                </div>
+
+                <div id="paper-authors">
+                    <b><a href="https://alistairfoggin.github.io/">Alistair Foggin</a></b>,
+                    <a href="https://www.linkedin.com/in/alan-millard-45b9b519/">Alan Millard</a>
+                </div>
+                <div>
+                    <!-- <a href="">[Project Page]</a>-->
+                    <a href="assets/other/Autonomous_Landing_of_a_UAV_on_a_UGV_for_Extending_Mission_Flight_Time.pdf" target="_blank">[Paper]</a>
+                    <!-- <a href="">[Code]</a>-->
+                    <!-- <a href="">[Dataset]</a> -->
+                </div>
+                <!--                <div class="paper-desc">-->
+                <!--                    &lt;!&ndash;                    arXiv 2023&ndash;&gt;-->
+                <!--                    2023-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--- List of education --->
+<section>
+    <div class="container">
+        <div class="row vspace-top">
+            <div class="col offset-sm-1">
+                <br>
+                <h1>Education</h1>
+                <br>
+                <ol class="timeline">
+                    <li class="is-revealing is-header">
+                        <!-- <span class="point"></span> -->
+                        <img src="assets/imgs/logos/york_uni.png" class="logo" style="transform: scale(0.81);"/>
+                        <p class="description">
+                            University of York<br>
+                            <span class="text-lightblue">PhD in Computer Science</span><br>
+                            <span class="text-lightblue">2024 - </span>
+                        </p>
+                    </li>
+                    <li class="is-revealing is-header">
+                        <!-- <span class="point"></span> -->
+                        <img src="assets/imgs/logos/york_uni.png" class="logo"
+                             style="transform: scale(0.81);"/>
+                        <p class="description">
+                            University of York<br>
+                            <span class="text-lightblue">BSc Computer Science</span><br>
+                            <i> First Class Honours </i><br>
+                            <span class="text-lightblue">2021 - 2024</span>
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row vspace-top">
+            <div class="col offset-sm-1">
+                <div>
+                    <p class="main-text-desc">
+                        Credit to <a
+                            href="https://jadgardner.github.io/">James Gardner</a>, <a
+                            href="https://yaochih.github.io/">Yao-Chih Lee</a>, and <a
+                            href="https://finlay-hudson.github.io/">Finlay Hudson</a> 
+                        for inspiring elements of this page design.
+                    </p>
+                </div>
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="assets/bootstrap/jquery.js"></script>
+                <!-- Include all compiled plugins (below), or include individual files as needed -->
+                <script src="assets/bootstrap/bootstrap.js"></script>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+</body>
+
+</html>
