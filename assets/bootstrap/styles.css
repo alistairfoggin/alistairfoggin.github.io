@@ -442,11 +442,29 @@ li .description {
 	.timeline{
 		border: none;
 		background-color: rgba(0,0,0,0);
+		text-align: left;
 	}
 
 	.timeline li{
-		margin-top: 70px;
-		height: 150px;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 15px;
+		height: auto;
+	}
+
+	.timeline li .logo {
+		width: 50px;
+		max-width: 50px;
+		margin-right: 15px;
+		margin-left: 0;
+		flex-shrink: 0;
+	}
+
+	.timeline li .description {
+		text-align: left;
+		margin-top: 0;
 	}
 }
 
@@ -462,10 +480,6 @@ li .description {
 		margin: 10px 0;
 		float: left;
 	}
-
-	.timeline{
-		display: none;
-		}
 
 	.job-title {
 		position: absolute;

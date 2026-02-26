@@ -93,6 +93,7 @@
         .main-text-desc {
             font-size: 15px;
             color: #FFFFFF;
+            text-align: justify;
         }
 
         .vspace-top {
@@ -124,6 +125,10 @@
             color: #FFFFFF;
         }
 
+        .paper-title + p {
+            margin-bottom: 0.25rem;
+        }
+
         .paper-authors {
             font-style: italic;
             color: #FFFFFF;
@@ -151,18 +156,43 @@
             background-color: #FFFFFF;
             padding: 10px;
         }
+
+        @media(max-width: 767px) {
+            .profile-img {
+                max-width: 180px;
+            }
+
+            .paper-img-container {
+                justify-content: flex-start;
+            }
+        }
+
+        .paper-img-container {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .paper-img-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 0;
+        }
     </style>
 </head>
 
 <body>
 <div id="header">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-3 offset-sm-1">
-                <img src="assets/imgs/profile.jpg" class="img-fluid" alt="Avatar">
-            </div>
-
-            <div class="col">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-3 text-center mb-3 mb-md-0">
+                        <img src="assets/imgs/profile.jpg" class="img-fluid profile-img" alt="Avatar">
+                    </div>
+                    <div class="col">
                 <div id="header-text-name">
                     Alistair Foggin
                 </div>
@@ -192,18 +222,20 @@
                     </a>
                 </div>
                 <div id="header-text-dept">
-                    <a href="http://www.york.ac.uk/" target="_blank" rel="noopener">
+                    <a href="https://www.york.ac.uk/" target="_blank" rel="noopener">
                         <span>University of York</span>
                     </a>
                 </div>
                 <div>
+                    <a href="https://scholar.google.com/citations?user=1eG2DHcAAAAJ">[Google Scholar]</a>
                     <a href="https://github.com/alistairfoggin">[GitHub]</a>
                     <a href="https://uk.linkedin.com/in/alistair-foggin">[LinkedIn]</a>
+                    <a href="https://x.com/AlistairFoggin">[X]</a>
                     <a href="https://bsky.app/profile/alistairfoggin.bsky.social">[Bluesky]</a>
 
 
+                </div>
             </div>
-
         </div>
     </div>
 </div>
@@ -211,8 +243,8 @@
 
 <section>
     <div class="container">
-        <div class="row vspace-top">
-            <div class="col offset-sm-1">
+        <div class="row vspace-top justify-content-center">
+            <div class="col-md-10">
                 <h1>Bio</h1>
                 <p class="main-text-desc">
                     I am a PhD researcher in Computer Vision, Graphics and Learning having graduated in
@@ -223,152 +255,22 @@
                     both in sampling sparsity and image quality, and ways in which one can disentangle lighting and structure in images.
                 </p>
                 <p class="main-text-desc">
-                    In the years leading up to my PhD, I carried out a research project as part of the YorRobots Venables Internship
-                    and worked at Daysix part time on a fantastic variety of Web Apps as well as The Trauma App for NHS Scotland.
+                    Currently I am also a research associate at <a href="https://pxld.ai">PXLD</a>. In the years leading up to my PhD,
+                    I carried out a research project as part of the YorRobots Venables Internship and worked at <a href="https://daysix.co">Daysix</a>
+                    part time on a fantastic variety of Web Apps as well as The Trauma App for NHS Scotland.
                     Having grown up in China and Kyrgyzstan, going and helping on work trips with Plateau Perspectives, and working
-                    at Glencoe Outdoor Centre as a Group Instructor, I have also enjoyed a wide experience of the world, cultures, and the outdoors. 
+                    at Glencoe Outdoor Centre as a Group Instructor, I have also enjoyed a wide experience of the world, cultures, and the outdoors.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<section>
-    <div class="container">
-        <div class="row vspace-top">
-            <div class="col offset-sm-1">
-                <h1>Work</h1>
-                <br>
-                <ol class="timeline">
-                    <li class="is-revealing is-header">
-                        <!-- <span class="point"></span> -->
-                        <img src="assets/imgs/logos/york_uni.png" class="logo" style="transform: scale(0.81);"/>
-                        <p class="description">
-                            University of York<br>
-                            <span class="text-lightblue">PhD Student in Computer Science</span><br>
-                            2024 -
-                        </p>
-                    </li>
-                    <li class="is-revealing is-header">
-                        <!-- <span class="point"></span> -->
-                        <img src="assets/imgs/logos/university_of_york_department_of_computer_science_logo.jpg" class="logo" style="transform: scale(0.81);"/>
-                        <p class="description">
-                            YorRobots<br>
-                            <span class="text-lightblue">Research Intern</span><br>
-                            2023
-                        </p>
-                    </li>
-                    <li class="is-revealing is-header">
-                        <!-- <span class="point"></span> -->
-                        <img src="assets/imgs/logos/daysix_ltd_logo.jpg" class="logo" style="transform: scale(0.81);"/>
-                        <p class="description">
-                            Daysix<br>
-                            <span class="text-lightblue">Web and App Developer</span><br>
-                            2020 - 2024
-                        </p>
-                    </li>
-                    <li class="is-revealing is-header">
-                        <!-- <span class="point"></span> -->
-                        <img src="assets/imgs/logos/glencoe.png" class="logo" style="transform: scale(0.81);"/>
-                        <p class="description">
-                            Glencoe Outdoor Centre<br>
-                            <span class="text-lightblue">Group Instructor</span><br>
-                            2021
-                        </p>
-                    </li>
-                </ol>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--- List of publications --->
-<section>
-    <div class="container">
-<!--        <div class="row vspace-top">-->
-        <div class="col offset-sm-1">
-            <h1>Academic Achievements</h1>
-            <br>
-        </div>
-<!--        </div>-->
-        <div class="row align-items-center">
-            <!-- Video Section -->
-            <div class="col offset-sm-1">
-                <a href="assets/other/VR Interface Poster.pdf" target="_blank">
-                    <img src="assets/imgs/vr_interface_screenshot.png" alt="Sample Image" style="width: 100%; border-radius: 0;">
-                </a>
-            </div>
-
-            <!-- Text Section -->
-            <div class="col">
-                <div>
-                    <div class="paper-title">
-                        Virtual Reality Interface for Robot Teleoperation
-                        and Environment Visualisation
-                    </div>
-                    <p>YorRobots Venables Internship | Award for Best Work</p>
-                </div>
-                <div id="paper-authors">
-                    <b><a href="https://alistairfoggin.github.io/">Alistair Foggin</a></b>,
-                    <a href="https://www.linkedin.com/in/alan-millard-45b9b519/">Alan Millard</a>
-                </div>
-                <div>
-                    <a href="assets/other/VR Interface Poster.pdf" target="_blank">[Project Poster]</a>
-                    <a href="https://github.com/alistairfoggin/YorRobotsVR">[Code]</a>
-                </div>
-                <!--                <div class="paper-desc">-->
-                <!--                    &lt;!&ndash;                    arXiv 2024&ndash;&gt;-->
-                <!--                    2024-->
-                <!--                </div>-->
-            </div>
-        </div>
-        <br>
-        <div class="row align-items-center">
-            <!-- Video Section -->
-            <!--            <div class="col offset-sm-1">-->
-            <!--                <video playsinline autoplay loop preload muted id="header_vid" style="width: 100%;">-->
-            <!--                    <source src="tabe/videos/results_vids/TABE-51.mp4" type="video/mp4">-->
-            <!--                </video>-->
-            <!--            </div>-->
-            <div class="col offset-sm-1 white">
-                <img src="assets/imgs/dissertation_state_machine.svg" alt="Sample Image" style="width: 100%; border-radius: 0;">
-            </div>
-
-            <!-- Text Section -->
-            <div class="col">
-                <div>
-                    <div class="paper-title">
-                        Autonomous Landing of a UAV on a UGV for Extending Mission Flight Time
-                    </div>
-                    <p>Final Year Undergraduate Dissertation</p>
-                </div>
-
-                <div id="paper-authors">
-                    <b><a href="https://alistairfoggin.github.io/">Alistair Foggin</a></b>,
-                    <a href="https://www.linkedin.com/in/alan-millard-45b9b519/">Alan Millard</a>
-                </div>
-                <div>
-                    <!-- <a href="">[Project Page]</a>-->
-                    <a href="assets/other/Autonomous_Landing_of_a_UAV_on_a_UGV_for_Extending_Mission_Flight_Time.pdf" target="_blank">[Paper]</a>
-                    <!-- <a href="">[Code]</a>-->
-                    <!-- <a href="">[Dataset]</a> -->
-                </div>
-                <!--                <div class="paper-desc">-->
-                <!--                    &lt;!&ndash;                    arXiv 2023&ndash;&gt;-->
-                <!--                    2023-->
-                <!--                </div>-->
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <!--- List of education --->
 <section>
     <div class="container">
-        <div class="row vspace-top">
-            <div class="col offset-sm-1">
-                <br>
+        <div class="row vspace-top justify-content-center">
+            <div class="col-md-10">
                 <h1>Education</h1>
                 <br>
                 <ol class="timeline">
@@ -377,7 +279,7 @@
                         <img src="assets/imgs/logos/york_uni.png" class="logo" style="transform: scale(0.81);"/>
                         <p class="description">
                             University of York<br>
-                            <span class="text-lightblue">PhD in Computer Science</span><br>
+                            <span class="text-lightblue">PhD Student in Computer Science</span><br>
                             <span class="text-lightblue">2024 - </span>
                         </p>
                     </li>
@@ -398,16 +300,148 @@
     </div>
 </section>
 
+<!--- List of publications --->
 <section>
     <div class="container">
-        <div class="row vspace-top">
-            <div class="col offset-sm-1">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h1>Publications & Projects</h1>
+                <br>
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <a href="projects/crocodilight/" target="_blank">
+                            <img src="projects/crocodilight/static/images/og_image.png" alt="CroCoDiLight" style="width: 100%; border-radius: 0;">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <div class="paper-title">
+                                CroCoDiLight: Repurposing Cross-View Completion Encoders for Relighting
+                            </div>
+                            <p>ICLR 2026</p>
+                        </div>
+                        <div id="paper-authors">
+                            <b><a href="https://alistairfoggin.github.io/">Alistair J Foggin</a></b>,
+                            <a href="https://www-users.cs.york.ac.uk/wsmith/">William A P Smith</a>
+                        </div>
+                        <div>
+                            <a href="projects/crocodilight/">[Project Page]</a>
+                            <a href="https://openreview.net/pdf?id=GKvb3HCyNk" target="_blank">[Paper]</a>
+                            <a href="https://github.com/alistairfoggin/CroCoDiLight" target="_blank">[Code]</a>
+                            <a href="https://huggingface.co/alistairfoggin/CroCoDiLight" target="_blank">[Model Weights]</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="paper-img-container white">
+                            <img src="assets/imgs/dissertation_state_machine.svg" alt="UAV Landing State Machine">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <div class="paper-title">
+                                Autonomous Landing of a UAV on a UGV for Extending Mission Flight Time
+                            </div>
+                            <p>Final Year Undergraduate Dissertation</p>
+                        </div>
+                        <div id="paper-authors">
+                            <b><a href="https://alistairfoggin.github.io/">Alistair Foggin</a></b>,
+                            <a href="https://www.linkedin.com/in/alan-millard-45b9b519/">Alan Millard</a>
+                        </div>
+                        <div>
+                            <a href="assets/other/Autonomous_Landing_of_a_UAV_on_a_UGV_for_Extending_Mission_Flight_Time.pdf" target="_blank">[Paper]</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <a href="assets/other/VR Interface Poster.pdf" target="_blank">
+                            <div class="paper-img-container">
+                                <img src="assets/imgs/vr_interface_screenshot.png" alt="VR Interface">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <div class="paper-title">
+                                Virtual Reality Interface for Robot Teleoperation
+                                and Environment Visualisation
+                            </div>
+                            <p>YorRobots Venables Internship | Award for Best Work</p>
+                        </div>
+                        <div id="paper-authors">
+                            <b><a href="https://alistairfoggin.github.io/">Alistair Foggin</a></b>,
+                            <a href="https://www.linkedin.com/in/alan-millard-45b9b519/">Alan Millard</a>
+                        </div>
+                        <div>
+                            <a href="assets/other/VR Interface Poster.pdf" target="_blank">[Project Poster]</a>
+                            <a href="https://github.com/alistairfoggin/YorRobotsVR">[Code]</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row vspace-top justify-content-center">
+            <div class="col-md-10">
+                <h1>Work</h1>
+                <br>
+                <ol class="timeline">
+                    <li class="is-revealing is-header">
+                        <img src="assets/imgs/logos/pxld.jpg" class="logo" style="transform: scale(0.81);"/>
+                        <p class="description">
+                            pxld.ai<br>
+                            <span class="text-lightblue">Research Associate</span><br>
+                            2026 -
+                        </p>
+                    </li>
+                    <li class="is-revealing is-header">
+                        <img src="assets/imgs/logos/university_of_york_department_of_computer_science_logo.jpg" class="logo" style="transform: scale(0.81);"/>
+                        <p class="description">
+                            YorRobots<br>
+                            <span class="text-lightblue">Research Intern</span><br>
+                            2023
+                        </p>
+                    </li>
+                    <li class="is-revealing is-header">
+                        <img src="assets/imgs/logos/daysix_ltd_logo.jpg" class="logo" style="transform: scale(0.81);"/>
+                        <p class="description">
+                            Daysix<br>
+                            <span class="text-lightblue">Web and App Developer</span><br>
+                            2020 - 2024
+                        </p>
+                    </li>
+                    <li class="is-revealing is-header">
+                        <img src="assets/imgs/logos/glencoe.png" class="logo" style="transform: scale(0.81);"/>
+                        <p class="description">
+                            Glencoe Outdoor Centre<br>
+                            <span class="text-lightblue">Group Instructor</span><br>
+                            2021
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row vspace-top justify-content-center">
+            <div class="col-md-10">
                 <div>
-                    <p class="main-text-desc">
+                    <p class="main-text-desc" style="text-align: center;">
                         Credit to <a
                             href="https://jadgardner.github.io/">James Gardner</a>, <a
                             href="https://yaochih.github.io/">Yao-Chih Lee</a>, and <a
-                            href="https://finlay-hudson.github.io/">Finlay Hudson</a> 
+                            href="https://finlay-hudson.github.io/">Finlay Hudson</a>
                         for inspiring elements of this page design.
                     </p>
                 </div>

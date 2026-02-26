@@ -1,0 +1,504 @@
+/* ── Base ─────────────────────────────────────── */
+body {
+    font-family: "Google Sans", "Noto Sans", "Noto Sans JP", sans-serif;
+}
+
+/* ── Hero ─────────────────────────────────────── */
+.publication-title {
+    font-family: "Google Sans", sans-serif;
+    font-weight: 700;
+}
+
+.publication-authors {
+    padding-bottom: 0.3rem;
+}
+
+.publication-authors a {
+    color: hsl(204, 86%, 53%);
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.publication-venue {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.publication-venue .badge {
+    display: inline-block;
+    background: hsl(204, 86%, 53%);
+    color: white;
+    padding: 0.25em 0.8em;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.publication-links .button {
+    font-size: 0.95rem;
+}
+
+.publication-links .button.is-disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* ── Teaser ───────────────────────────────────── */
+.hero.teaser {
+    padding-top: 0;
+}
+
+.teaser-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Hypothesis Figure ────────────────────────── */
+.hypothesis-figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.hypothesis-figure img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.hypothesis-figure figcaption {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 29%);
+    margin-top: 0.4rem;
+}
+
+/* ── Sections ─────────────────────────────────── */
+.section {
+    padding: 3rem 1.5rem;
+}
+
+/* ── Method SVG ───────────────────────────────── */
+.image img[src$=".svg"] {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* ── Carousel ─────────────────────────────────── */
+.carousel-container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #f5f5f5;
+}
+
+.carousel-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.carousel-img.active {
+    opacity: 1;
+}
+
+/* ── Carousel Slider ─────────────────────────── */
+.carousel-slider-container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.carousel-display {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #f5f5f5;
+}
+
+.carousel-display img {
+    width: 100%;
+    display: block;
+}
+
+/* ── Range Slider ────────────────────────────── */
+.interp-range {
+    width: 80%;
+    max-width: 400px;
+    cursor: pointer;
+    accent-color: hsl(204, 86%, 53%);
+    height: 8px;
+}
+
+.slider {
+    overflow: visible;
+    padding: 0.5rem;
+}
+
+.interp-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 400px;
+    margin: 0.25rem auto 0;
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 48%);
+}
+
+/* ── Freeze Lighting Row ─────────────────────── */
+.freeze-lighting-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.fl-pair {
+    flex: 0 0 auto;
+    width: 18%;
+    min-width: 120px;
+    text-align: center;
+}
+
+.fl-pair img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.fl-pair p {
+    margin-top: 2px;
+}
+
+#fl-reference {
+    border: 2px solid hsl(204, 86%, 53%);
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.freeze-lighting-legend {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    color: hsl(0, 0%, 48%);
+}
+
+/* ── Before/After Video Slider ───────────────── */
+.ba-video-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: col-resize;
+    user-select: none;
+    -webkit-user-select: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ba-video {
+    width: 100%;
+    display: block;
+}
+
+.ba-video-after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: inset(0 50% 0 0);
+}
+
+.ba-video-label {
+    position: absolute;
+    top: 12px;
+    padding: 4px 10px;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 15;
+    pointer-events: none;
+}
+
+.ba-video-label-left {
+    left: 12px;
+}
+
+.ba-video-label-right {
+    right: 12px;
+}
+
+.ba-video-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ba-video-scrubber {
+    flex: 1;
+    cursor: pointer;
+    accent-color: hsl(204, 86%, 53%);
+    height: 8px;
+}
+
+/* ── Before/After Slider ──────────────────────── */
+.ba-slider {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: col-resize;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.ba-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ba-after {
+    clip-path: inset(0 50% 0 0);
+}
+
+.ba-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.ba-handle-line {
+    flex: 1;
+    width: 2px;
+    background: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.ba-handle-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 0%, 29%);
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.container.is-comparison {
+    max-width: 1324px;
+}
+
+/* ── Comparison Table ─────────────────────────── */
+.comparison-table {
+    font-size: 0.85rem;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: none;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.comparison-table th {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    padding-bottom: 6px;
+    text-align: center !important;
+}
+
+.comparison-table img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+.comparison-table .colorbar-col,
+.comparison-table .mirror-col {
+    width: 6.2%;
+}
+
+.comparison-table .colorbar-cell {
+    padding: 2px;
+    vertical-align: center;
+}
+
+.comparison-table .colorbar-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+.comparison-table .comparison-gap td {
+    padding: 6px 0;
+}
+
+.comparison-table th:nth-child(3),
+.comparison-table td:nth-child(3) {
+    background: hsla(204, 86%, 53%, 0.08);
+}
+
+.comparison-table th:nth-child(3) {
+    font-weight: 700;
+    color: hsl(204, 86%, 40%);
+}
+
+/* ── Results Tables ───────────────────────────── */
+.results-table {
+    font-size: 0.85rem;
+}
+
+.results-table th,
+.results-table td {
+    white-space: nowrap;
+    padding: 0.4em 0.6em;
+}
+
+.results-table tr.is-ours td:first-child {
+    border-left: 3px solid hsl(204, 86%, 53%);
+}
+
+table.results-table thead tr:first-child th {
+    border-top: 1px solid hsl(0, 0%, 71%);
+}
+
+table.results-table tbody tr:last-child td {
+    border-bottom: 1px solid hsl(0, 0%, 71%);
+}
+
+.results-table .is-vbottom {
+    vertical-align: bottom;
+}
+
+.results-table .dataset-header {
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.results-table .col-spacer {
+    width: 0.8em;
+    padding: 0;
+}
+
+.table-divider td {
+    padding: 0;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+/* ── Before/After Slider aspect-ratio variants ── */
+.ba-slider-4x3 {
+    aspect-ratio: 4/3;
+}
+
+/* ── BibTeX ───────────────────────────────────── */
+.bibtex-container {
+    position: relative;
+}
+
+.bibtex-container pre {
+    padding-right: 4rem;
+}
+
+.copy-bibtex {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 5;
+}
+
+/* ── Footer ───────────────────────────────────── */
+.footer {
+    padding: 2rem 1.5rem;
+    background-color: hsl(0, 0%, 96%);
+}
+
+.footer a {
+    color: hsl(204, 86%, 53%);
+}
+
+/* ── Responsive ───────────────────────────────── */
+@media screen and (max-width: 768px) {
+    .publication-title {
+        font-size: 1.75rem !important;
+    }
+
+    .fl-pair {
+        width: 35%;
+        min-width: 100px;
+    }
+
+    .comparison-table {
+        font-size: 0.7rem;
+        min-width: 900px;
+    }
+
+    .ba-handle-circle {
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+    }
+
+    .columns:has(.ba-slider) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .columns:has(.ba-slider) > .column.is-one-third {
+        width: 50%;
+        flex: none;
+    }
+
+    .hypothesis-figure {
+        grid-template-columns: 1fr;
+    }
+}
