@@ -1,0 +1,160 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #181a1b;
+    color: #4F6071;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+p {
+    color: #a0b0d8;
+}
+
+#header {
+    background-color: #1e2122;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#footer {
+    background-color: #181a1b;
+    padding: 60px;
+}
+
+#portrait {
+    border: 3px solid white;
+}
+
+#paper-authors a {
+    color: white;
+    text-decoration: none;
+}
+
+#header-text {
+    margin-top: 60px;
+    margin-left: 220px;
+    color: #FFFFFF;
+}
+
+#header-text-name {
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+#header-text-email {
+    font-size: 20px;
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+#header-text-dept {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.header-text-desc {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.main-text-desc {
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+.vspace-top {
+    margin-top: 30px;
+}
+
+.vspace-top-news {
+    margin-top: 15px;
+}
+
+.paper-image {
+    width: 150px;
+}
+
+.paper-desc {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.news-date {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.paper-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.paper-title + p {
+    margin-bottom: 0.25rem;
+}
+
+.paper-authors {
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+.course {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.institution {
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.text-lightblue {
+    color: #a0b0d8;
+}
+
+.white {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.paper-img-container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paper-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+@media (max-width: 767px) {
+    .profile-img {
+        max-width: 180px;
+    }
+
+    .paper-img-container {
+        justify-content: flex-start;
+    }
+}
