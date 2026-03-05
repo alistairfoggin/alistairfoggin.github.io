@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alistairfoggin.com/sitemap.xml
