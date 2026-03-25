@@ -36,7 +36,7 @@ p {
     border: 3px solid white;
 }
 
-#paper-authors a {
+.paper-authors a {
     color: white;
     text-decoration: none;
 }
@@ -58,7 +58,7 @@ p {
     color: #FFFFFF;
 }
 
-#header-text-dept {
+.header-text-dept {
     font-size: 20px;
     color: #FFFFFF;
 }
@@ -157,4 +157,10 @@ img {
     .paper-img-container {
         justify-content: flex-start;
     }
+}
+
+.experience-link,
+.experience-link:visited,
+.experience-link:active {
+    color: inherit;
 }
